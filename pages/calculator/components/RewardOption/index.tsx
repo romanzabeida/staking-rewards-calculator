@@ -20,6 +20,7 @@ const RewardOptionSelector: FC<Props> = (): JSX.Element => {
 
   const onChange = (e: ChangeEvent<HTMLSelectElement>): void => {
     const selection = Number(e.target.value);
+    selectRewardOption(selection);
   };
 
   const value = rewardOptions[rewardOptionSelection]?.id;
